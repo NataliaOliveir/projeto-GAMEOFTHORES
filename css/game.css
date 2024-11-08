@@ -22,6 +22,13 @@ body{
 
 #hud{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 15px;
     padding: 10px;
+}
+#score{
+    font-family: Samurai;
+    font-size: 50px;
+    color: rgb(255, 0, 0);
 }

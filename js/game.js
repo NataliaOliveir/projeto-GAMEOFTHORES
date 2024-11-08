@@ -7,6 +7,15 @@ let img = document.createElement("img")
 img.src = "imagens/game-removebg-preview.png"
 img.style.position = "absolute"
 
+function ganharPonto(){
+  score += 100
+  let domScore = document.getElementById("score-real")
+  domScore.innerText = score
+}
+
+
+
+
 function alteraTamanhoMosquito() {
   //numero * (max - min) + min
   let numeroAleatorio = Math.random() * (0.6 - 0.2) + 0.2
@@ -26,7 +35,7 @@ img.addEventListener("click", function () {
  
   clicou = true
   img.remove()
-
+ganharPonto()
 })
 
 setInterval(function () {
@@ -52,6 +61,13 @@ setInterval(function () {
     else if(vidas == 0){
       let gorro1 = document.getElementById("gorro-1")
       gorro1.src = "../imagens/arco1.png"
+
+      localStorage.setItem(
+        'score',
+        {
+          lastScore: score
+        }
+      )
      
         setTimeout(function() {
             window.location.href = "gameover.html"; 
