@@ -1,0 +1,32 @@
+body {
+    font-family: 'Old Standard TT', serif; /* Fonte com estilo gótico */
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222; /* Cor escura, como a noite */
+    background-image: url("imagens/s5e8.webp");
+    background-size: cover;
+  }
+  
+  .game-over-container {
+    text-align: center;
+    color: #fff; /* Texto branco para melhor contraste */
+  }
+  
+  img {
+    max-width: 80%;
+    height: auto;
+    filter: grayscale(100%); /* Torna a imagem em preto e branco */
+  }
+  
+  h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px #000; /* Adiciona uma sombra para o texto */
+  }
+  
+  p {
+    font-size: 2rem;
+  }
